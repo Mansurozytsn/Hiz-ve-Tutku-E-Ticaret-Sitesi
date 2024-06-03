@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hız Ve Tutku | Motosiklet Ekipmanları Alışveriş Mağazası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+<h2 class="title">Hız Ve Tutku</h2>
+<ul class="menu">
+  <li class="active">Ana sayfa</li>
+  <li>İletişim</li> 
+</ul>
+<ul class="menu_icons">
+  <li><i class="bi bi-person"></i></li>
+  <li><i class="bi bi-search"></i></li>
+  <li class="basket__icon" onclick="toggleModal()">
+    <i class="bi bi-bag"></i>
+    <span class="basket__count">2</span>
+  </li>
+</ul>
+    </nav>
+    <section class="slider">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/slide1.jpg" class="d-block w-100" alt="Ekipmanlı motorcu">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/slide2.jpg" class="d-block w-100" alt="Ekipmanlı motorcu">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/slide3.jpg" class="d-block w-100" alt="Ekipmanlı motorcu">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="store my-5">
+      <div class="filter__background"></div>
+        <ul class="filter">
+          <li class="active">Tümü</li>
+          <li>Kasklar</li>
+          <li>Eldivenler</li>
+          <li>Dizlikler</li>
+          <li>Montlar</li> 
+        </ul>
+      <div class="row ürün__list">
+        <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+            <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+                <div class="col-6">
+                  <img
+                     class="img-fluid shadow"
+                     src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                     width="258"
+                     height="400"
+                  /> 
+    
+                </div>
+                  <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="ürün__detail">
+                      <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                      <span class="fs-4 fw-bold">Beyaz</span><br />
+                      <span class="ürün__star">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fiil"></i>
+                      <span class="gray">541 reviews</span>
+                    </span>
+                  </div>
+                  <p class="ürün__description fos gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+                  </p>
+                    <div>
+                    <span class="black fw-bold fs-4 me-2">550₺</span>
+                    <span class="fs-4 fw-bold old__price">700₺</span>
+                    </div>
+                    <button class="btn__purple">ADD BASKET</button>
+                   </div>
+                  </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+            <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+                <div class="col-6">
+                  <img
+                     class="img-fluid shadow"
+                     src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                     width="258"
+                     height="400"
+                  /> 
+    
+                </div>
+                  <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="ürün__detail">
+                      <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                      <span class="fs-4 fw-bold">Beyaz</span><br />
+                      <span class="ürün__star">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fiil"></i>
+                      <span class="gray">541 reviews</span>
+                    </span>
+                  </div>
+                  <p class="ürün__description fos gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+                  </p>
+                    <div>
+                    <span class="black fw-bold fs-4 me-2">550₺</span>
+                    <span class="fs-4 fw-bold old__price">700₺</span>
+                    </div>
+                    <button class="btn__purple">ADD BASKET</button>
+                   </div>
+                  </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+            <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+                <div class="col-6">
+                  <img
+                     class="img-fluid shadow"
+                     src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                     width="258"
+                     height="400"
+                  /> 
+    
+                </div>
+                  <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="ürün__detail">
+                      <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                      <span class="fs-4 fw-bold">Beyaz</span><br />
+                      <span class="ürün__star">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fiil"></i>
+                      <span class="gray">541 reviews</span>
+                    </span>
+                  </div>
+                  <p class="ürün__description fos gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+                  </p>
+                    <div>
+                    <span class="black fw-bold fs-4 me-2">550₺</span>
+                    <span class="fs-4 fw-bold old__price">700₺</span>
+                    </div>
+                    <button class="btn__purple">ADD BASKET</button>
+                   </div>
+                  </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+            <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+                <div class="col-6">
+                  <img
+                     class="img-fluid shadow"
+                     src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                     width="258"
+                     height="400"
+                  /> 
+    
+                </div>
+                  <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="ürün__detail">
+                      <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                      <span class="fs-4 fw-bold">Beyaz</span><br />
+                      <span class="ürün__star">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fiil"></i>
+                      <span class="gray">541 reviews</span>
+                    </span>
+                  </div>
+                  <p class="ürün__description fos gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+                  </p>
+                    <div>
+                    <span class="black fw-bold fs-4 me-2">550₺</span>
+                    <span class="fs-4 fw-bold old__price">700₺</span>
+                    </div>
+                    <button class="btn__purple">ADD BASKET</button>
+                   </div>
+                  </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+            <div class="col-5 offset-2 my-5">,
+              <div class="row ürün__card">
+                <div class="col-6">
+                  <img
+                     class="img-fluid shadow"
+                     src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                     width="258"
+                     height="400"
+                  /> 
+    
+                </div>
+                  <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="ürün__detail">
+                      <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                      <span class="fs-4 fw-bold">Beyaz</span><br />
+                      <span class="ürün__star">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fiil"></i>
+                      <span class="gray">541 reviews</span>
+                    </span>
+                  </div>
+                  <p class="ürün__description fos gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+                  </p>
+                    <div>
+                    <span class="black fw-bold fs-4 me-2">550₺</span>
+                    <span class="fs-4 fw-bold old__price">700₺</span>
+                    </div>
+                    <button class="btn__purple">ADD BASKET</button>
+                   </div>
+                  </div>
+            </div>
+        <div class="col-5 my-5">
+          <div class="row ürün__card">
+            <div class="col-6">
+              <img
+                 class="img-fluid shadow"
+                 src="assets/images/ürün images/kask1.jpeg" alt="Kask1"
+                 width="258"
+                 height="400"
+              /> 
+
+            </div>
+              <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="ürün__detail">
+                  <span class="fos gray fs-5">Urbhanna 3c Sertifikalı Unisex Kask </span><br />
+                  <span class="fs-4 fw-bold">Beyaz</span><br />
+                  <span class="ürün__star">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fiil"></i>
+                  <span class="gray">541 reviews</span>
+                </span>
+              </div>
+              <p class="ürün__description fos gray">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis eum illum cum doloremque excepturi assumenda libero nihil labore quia soluta quod consequuntur, perferendis eaque! Nisi tempore at similique ducimus?
+              </p>
+                <div>
+                <span class="black fw-bold fs-4 me-2">550₺</span>
+                <span class="fs-4 fw-bold old__price">700₺</span>
+                </div>
+                <button class="btn__purple">ADD BASKET</button>
+               </div>
+              </div>
+            </div>
+             
+      </div>
+
+    </section>
+   
+    <div class="basket__modal">
+      <div class="basket__items">
+        <i class="bi bi-x" onclick="toggleModal()"></i>
+        <H2 class="basket__sepet">Sepetin</H2>  
+          <ul class="basket__list">
+            <li class="basket__item">
+              <img src="assets/images/ürün images/kask1.jpeg" alt="" width="100" height="100" />
+              <div class="basket__items-info">
+                <h3 class="ürün__sepetname">Urbhanna 3c Sertifikalı Unisex Kask</h3>
+                <span class="ürün__sepetprice">550tl</span><br />
+                <span class="ürün__sepetremove">remove</span>
+              </div>
+              <div class="ürün__count">
+                <span class="eksilt">-</span>
+                <span class="">2</span>
+                <span class="arttır">+</span>
+              </li>
+              <li class="basket__item">
+                <img src="assets/images/ürün images/kask1.jpeg" alt="" width="100" height="100" />
+                <div class="basket__items-info">
+                  <h3 class="ürün__sepetname">Urbhanna 3c Sertifikalı Unisex Kask</h3>
+                  <span class="ürün__sepetprice">550tl</span><br />
+                  <span class="ürün__sepetremove">remove</span>
+                </div>
+                <div class="ürün__count">
+                  <span class="eksilt">-</span>
+                  <span class="">2</span>
+                  <span class="arttır">+</span>
+                </li>
+                <li class="basket__item">
+                  <img src="assets/images/ürün images/kask1.jpeg" alt="" width="100" height="100" />
+                  <div class="basket__items-info">
+                    <h3 class="ürün__sepetname">Urbhanna 3c Sertifikalı Unisex Kask</h3>
+                    <span class="ürün__sepetprice">550tl</span><br />
+                    <span class="ürün__sepetremove">remove</span>
+                  </div>
+                  <div class="ürün__count">
+                    <span class="eksilt">-</span>
+                    <span class="">2</span>
+                    <span class="arttır">+</span>
+                  </li>
+                
+                </ul>
+              <div class="basket__total">
+                <span class="fw-bold mb-3 fs-4">Total : 1750₺</span>
+                <button class="btn__purple">CHECK0UT</button>
+              </div>
+           </div>
+      </div>
+    </div>
+
+
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
